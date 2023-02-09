@@ -1,0 +1,90 @@
+body {
+	background-image: url('img/code.jpg');
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+*::selection, input:focus, textarea:focus, select:focus {
+	color: #f7e018;
+	background: #000;
+}
+label, #title, #description {
+	font-size: 1.4em;
+	color: #fff;
+}
+input {
+	font-size: 1.4em;
+	color: #000;
+}
+/*Elemento main*/
+.main {
+	background-color: rgba(0, 0, 0, .7);
+	margin: auto;
+	width: 80%;
+	padding-bottom: .7em;
+	border-radius: 5px;
+}
+/*Título h1*/
+#title {
+	font-size: 2.5em;
+	text-align: center;
+	padding-top: 1em;
+}
+/*Descripción p*/
+#description {
+	font-size: 1.8em;
+	text-align: center;
+	font-weight: bold;
+}
+/*Primeros tres input y elemento select*/
+[type="text"], [type="email"], [type="number"], [id="dropdown"] {
+	display: block;
+	margin: auto;
+	width: 80%;
+	height: 2.2em;
+}
+/*Primeros cuatro label y elemento select*/
+[id="name-label"], [id="email-label"], [id="number-label"], [for="dropdown"], [id=dropdown] {
+	display: block;
+	margin: .5em 10% .5em 10%;
+}
+select{
+	font-size: 1.4em;
+}
+/*Inputs de tipo radio y checkbox*/
+[for="junior"], [for="semi-senior"], [for="senior"],
+[for="first-language"], [for="second-language"], [for="third-language"], [for="fourth-language"], [for="fifth-language"] {
+	display: flex;
+	width: 80%;
+	margin: .5em auto;
+}
+#levels, #languages {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+textarea{
+	display: block;
+	width: 80%;
+	height: 20vh;
+	margin: auto;
+	font-size: 1.4em;
+}
+[type="submit"] {
+	width: 80%;
+	height: 1.8em;
+	font-size: 1.8em;
+	margin: .7em auto;
+	display: block;
+	background: #f7e018;
+	font-weight: bold;
+}
+[type="submit"]:hover {
+	background: #222;
+	color: #f7e018;
+	border: solid #fff 1px;
+}
+[type="radio"], [type="checkbox"] {
+	width: 1em;
+}

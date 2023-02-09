@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Formulary</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="main">
+		<header class="header">
+      <h1 id="title">JavaScript Course Registration</h1>
+      <p id="description">
+      	Register on our page to access the course
+      </p>
+    </header>
+    <form id="survey-form" method="post">
+
+      <label id="name-label" for="name">Name</label>
+      <input type="text" required id="name" placeholder="John Doe">
+
+      <label id="email-label" for="email">Email</label>
+      <input type="email" required id="email" placeholder="example@gmail.com">
+
+      <label id="number-label" for="number">Age</label>
+      <input type="number" id="number" min="16" max="120" placeholder="18">
+
+      <label for="dropdown">How much experience do you have programming with JavaScript?</label>
+      <select name="dropdown" id="dropdown">
+        <option disabled selected>Select your experience</option>
+        <option value="nothing">Nothing</option>
+        <option value="very little">Very little</option>
+        <option value="something">Something</option>
+        <option value="enough experience">Enough experience</option>
+      </select>
+
+      <label id="levels">According to your experience, which of these levels are you at?</label>
+
+      <label for="junior">
+        <input type="radio" name="levels" id="junior" value="junior" checked> &nbsp;Junior
+      </label>
+      <label for="semi-senior">
+        <input type="radio" name="levels" id="semi-senior" value="semi-senior"> &nbsp;Semi Senior
+      </label>
+      <label for="senior">
+        <input type="radio" name="levels" id="senior" value="senior"> &nbsp;Senior
+      </label>
+
+
+      <label id="languages">Select the languages with which you have experience</label>
+      <label for="first-language">
+        <input type="checkbox" id="first-language" name="first-language" value="html"> &nbsp;HTML
+      </label>
+      <label for="second-language">
+        <input type="checkbox" id="second-language" name="second-language" value="css"> &nbsp;CSS
+      </label>
+      <label for="third-language">
+        <input type="checkbox" id="third-language" name="third-language" value="javascript"> &nbsp;JavaScript
+      </label>
+      <label for="fourth-language">
+        <input type="checkbox" id="fourth-language" name="fourth-language" value="php"> &nbsp;PHP
+      </label>
+      <label for="fifth-language">
+        <input type="checkbox" id="fifth-language" name="fifth-language" value="python"> &nbsp;Python
+      </label>
+
+      <textarea placeholder="You can leave your comment here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+	</main>
+</body>
+</html>
